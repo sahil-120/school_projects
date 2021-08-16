@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SCHOOL</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">SAHIL</div>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <label for="btn-1" class="show">Facuties</label>
+          <a href="#">Faculties</a>
+          <input type="checkbox" id="btn-1">
+          <ul>
+            <li><a href="#">Eng Medium</a></li>
+            <li><a href="#">Nep Medium</a></li>
+            <li><a href="#">Gen Medium</a></li>
+          </ul>
+        </li>
+        <li>
+          <label for="btn-2" class="show"></label>
+          <a href="#">Faculties</a>
+          <input type="checkbox" id="btn-2">
+          <ul>
+            <li><a href="#">Eng Medium</a></li>
+            <li><a href="#">Nepali Medium</a></li>
+            <li><a href="#">Technical</a></li>
+            <li>
+              <label for="btn-3" class="show">Collages</label>
+              <a href="#">More <span class="fa fa-plus"></span></a>
+              <input type="checkbox" id="btn-3">
+              <ul>
+                <li><a href="#">Eduation</a></li>
+                <li><a href="#">Management</a></li>
+                <li><a href="#">Science</a></li>
+                <li><a href="#">Techinal Science</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="addmission.html">Online Addmission</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="main-box">
+      <h1>THE MODEL SCHOOL PRASAUNI</h1>
+      <p>BARA's One Of The Best Engeneering College</p>
+      <button>ENROLL NOW</button>
+   </div>
+   <div class="container">
+      <h2>FACILITIES</h2>
+      <div class="row">
+         <div class="column">
+         <a href=""><img src="compterlab.jpg" alt=""></a>
+         <a href="">Comp Eng</a>
+         </div>
+         <div class="column">
+            <a href=""><img src="English.jpg" alt=""></a>
+            <a href="">Eng Medium</a>
+         </div>
+         <div class="column">
+            <a href=""><img src="nepali.jpg" alt=""></a>
+            <a href="">N Medium</a>
+         </div>
+      </div>
+   </div>
+   <div class="container-2">
+    <h2>Our Gallery</h2>
+    <div class="row">
+       <div class="column">
+       <a href=""><img src="compterlab.jpg" alt=""></a>
+       <a href="">Computer Engeneering</a>
+       </div>
+       <div class="column">
+          <a href=""><img src="library.jpg" alt=""></a>
+          <a href="">Our library</a>
+       </div>
+       <div class="column">
+          <a href=""><img src="teacher.jpg" alt=""></a>
+          <a href="">HighlevelTech</a>
+       </div>
+    </div>
+ </div>
+<footer>
+ <ul class="foot">
+   <li>terms</li>
+   <li>help</li>
+   <li>support</li>
+   <li>&copy copyright</li>
+   <li>contact Us</li>
+
+ </ul>
+</footer>
+    <script>
+      $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+      });
+    </script>
+  </body>
+</html>

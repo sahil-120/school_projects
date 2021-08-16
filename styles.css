@@ -1,0 +1,338 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+  background: hotpink;
+}
+nav {
+  padding-bottom: -3px;
+}
+nav:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo {
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
+}
+nav ul {
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover {
+  color: cyan;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #33ffff, 0 0 10px #66ffff;
+}
+nav ul ul li a:hover {
+  box-shadow: none;
+}
+nav ul ul {
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.3s;
+}
+nav ul ul ul {
+  border-top: none;
+}
+nav ul li:hover > ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul ul li a {
+  line-height: 50px;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,
+.icon,
+input {
+  display: none;
+}
+.fa-plus {
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media all and (max-width: 968px) {
+  nav ul {
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo {
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a,
+  ul {
+    display: none;
+  }
+  nav ul li,
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover {
+    box-shadow: none;
+  }
+  .show {
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover {
+    color: cyan;
+  }
+  .icon {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul {
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a {
+    padding-left: 40px;
+  }
+  nav ul ul ul a {
+    padding-left: 80px;
+  }
+  nav ul ul ul li {
+    position: static;
+  }
+  [id^=btn]:checked + ul {
+    display: block;
+  }
+  nav ul ul li {
+    border-bottom: 0px;
+  }
+  span.cancel:before {
+    content: '\f00d';
+  }
+}
+.main-box {
+  width: 100%;
+  height: 80vh;
+  background-image: url(bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-color: white;
+  text-align: center;
+  padding-top: 30vh;
+}
+.main h1 {
+  word-spacing: 8px;
+  color: red;
+  margin-bottom: 15px;
+  font-family: serif;
+}
+.main-box p {
+  font-family: "Century Gothic", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  margin-bottom: 40px;
+}
+.main-box button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: none;
+  border: 1px solid #ff8800;
+  color: #ffffff;
+}
+.main-box button:hover {
+  background: #ff8800;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.container h2 {
+  color: #ff8800;
+  text-align: center;
+  margin: 30px;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+}
+.container h2::before,
+.container h2::after {
+  content: "-----";
+  letter-spacing: -5px;
+  font-weight: lighter;
+  margin: 0 20px 0 10px;
+}
+.container .row {
+  display: flex;
+  justify-content: space-between;
+}
+.container .column {
+  width: 32%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+.container .column img {
+  width: 100%;
+  height: auto;
+}
+.container .column a:last-child {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0;
+  top: 99%;
+  left: 0;
+  bottom: 0;
+  background-color: #ff8800c0;
+  text-align: center;
+  padding-top: 14vw;
+  font-size: 3vw;
+  color: #ffffff;
+  text-decoration: none;
+}
+.container .column:hover a:last-child {
+  height: 100%;
+  top: 0;
+}
+.container-2 {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.container-2 h2 {
+  color: #ff8800;
+  text-align: center;
+  margin: 30px;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+}
+.container-2 h2::before,
+.container-2 h2::after {
+  content: "-----";
+  letter-spacing: -5px;
+  font-weight: lighter;
+  margin: 0 20px 0 10px;
+}
+.container-2 .row {
+  display: flex;
+  justify-content: space-between;
+}
+.container-2 .column {
+  width: 32%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+.container-2 .column img {
+  width: 100%;
+  height: auto;
+}
+.container-2 .column a:last-child {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0;
+  top: 99%;
+  left: 0;
+  bottom: 0;
+  background-color: #ff8800c0;
+  text-align: center;
+  padding-top: 14vw;
+  font-size: 3vw;
+  color: #ffffff;
+  text-decoration: none;
+}
+.container-2 .column:hover a:last-child {
+  height: 100%;
+  top: 0;
+}
+footer {
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}
+footer li {
+  list-style-type: none;
+}
